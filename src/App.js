@@ -6,7 +6,6 @@ import "./App.css";
 
 class App extends Component {
   showGamePlay() {
-    document.getElementById('rules').style.display='block';
     document.getElementById('rules').scrollIntoView();
   }
   showTutorial() {
