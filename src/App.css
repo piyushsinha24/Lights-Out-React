@@ -1,7 +1,75 @@
 .App {
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   height: 100vh;
+}
+
+.App-Gameplay {
+  font-size: 24px;
+  align-self: flex-end;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+.App-Gameplay .btn {
+  border: 1px solid;
+  margin-left: 12px;
+  padding: 8px;
+}
+
+#rules {
+  display: none;
+}
+
+#rules p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#solution {
+  display: none;
+}
+
+#solution p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#solution-table {
+  margin: 0 auto;
+}
+#solution-table td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 4px 12px;
+}
+
+@media (max-width: 760px) {
+  .App-Gameplay .btn {
+    font-size: 22px;
+  }
+  #rules p {
+    padding: 8px;
+  }
+  #solution p {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 330px) {
+  .App-Gameplay .btn {
+    font-size: 18px;
+  }
+  #rules p {
+    padding: 8px;
+  }
+  #solution p {
+    padding: 8px;
+  }
 }
